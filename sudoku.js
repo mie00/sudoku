@@ -46,7 +46,7 @@
 		return [arr]
 	}
 	//parses the arr and convert elements to numbers
-	window.sudokusolve=function(sud) {
+	window.sudokuSolve=function(sud) {
 		if (Array.isArray(sud))return recurr(sud.map(Number))
 		else return recurr(sud.replace(/[^\d]/g,"").split("").map(Number))
 	}
